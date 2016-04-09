@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>My Home Page</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/hamburger.css' %}" />
+    <script src="{% static 'home/js/hamburger.js' %}"></script>
+</head>
+<body>
+<!--*********************************** HAMBURGER BUTTON *********************************************-->
+  <div class="menu-links">
+    <ul class="toggle-menu">
+      <li class="toggle">
+        <span class="toggle-menu-bar"></span>
+        <span class="toggle-menu-bar"></span>
+        <span class="toggle-menu-bar"></span>
+      </li>
+      <li class="content" style="display: none;">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!--*********************************** End of hamburguer button **********************************-->
+
+<div class="menu-vertical">
+    <ul>
+        <a  href="/" class="link-vertical"><li class="fila-vertical"> Inicio      </li></a>
+        <a  href="/" class="link-vertical"><li class="fila-vertical"> RPM         </li></a>
+        <a  href="/" class="link-vertical"><li class="fila-vertical"> Velocidad   </li></a>
+        <a  href="/" class="link-vertical"><li class="fila-vertical"> GPS         </li></a>
+        <a  href="/" class="link-vertical"><li class="fila-vertical"> Gasolina    </li></a>
+        <a  href="/" class="link-vertical"><li class="fila-vertical"> Temperatura </li></a>
+        <a  href="/" class="link-vertical"><li class="fila-vertical"> Posiciones  </li></a>
+        <a  href="/" class="link-vertical"><li class="fila-vertical"> Recorridos  </li></a>
+        <a  href="/" class="link-vertical"><li class="fila-vertical"> DEVELOPER...</li></a>
+    </ul>
+</div>
+
+<div class="content">
+<!--Here it goes all the magic...-->
+
+</div>
+
+
+<a class="link-bottom" href="http://www.vgmotostudent.com/es/index.html">Link a VGMMOTOSTUDENT</a><br />
+</body>
+</html>
