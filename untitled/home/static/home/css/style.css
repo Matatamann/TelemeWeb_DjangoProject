@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+body {
+  background: white url("../img/matrix_background.jpg") no-repeat right bottom;
+}
+
+header {
+  background-color: #333;
+  width: 100%;
+  height: 65px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    /*-webkit-padding-start: 40px;*/
+}
+
+.menu-vertical{
+    /*margin-bottom: 0;*/
+    border: 2px solid lightseagreen;
+    background-color: white;
+    height: 100%;
+    width: 40%;
+    float: left;
+    padding-bottom: 15%;
+    border-radius: 20px;
+}
+
+.link-vertical{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    border: 2px solid lightseagreen;
+    border-right: none;
+    border-left: none;
+    padding: 5px;
+    width: 95%;
+    background-color: white;
+    text-align: center;
+    color: green;
+}
+
+.link-vertical:hover{
+    background-color: lightgrey;
+}
+
+/*.content{
+    margin-bottom: 0;
+    border: 2px solid lightseagreen;
+    background-color: white;
+    height: 100%;
+    width: 55%;
+    float: right;
+}
+
+.link-bottom{
+    display: block;
+    margin-top: 10px;
+}*/
