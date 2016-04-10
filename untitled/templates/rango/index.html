@@ -1,14 +1,31 @@
-<!DOCTYPE html>
-<html>
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
     <head>
         <title>Rango</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'home/css/hamburger.css' %}" />
+        <script type="text/javascript" src="{% static 'js/jquery-1.12.3.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'home/js/hamburger.js' %}"></script>
     </head>
 
     <body>
-        <h1>Diego says...</h1>
-        hello world! <strong>{{ boldmessage }}</strong><br />
-        <a href="http://www.vgmotostudent.com/es/index.html">About</a><br />
+        <!--*********************************** HAMBURGER BUTTON *********************************************-->
+          <div class="menu-links">
+            <ul class="toggle-menu">
+              <li class="toggle">
+                <span class="toggle-menu-bar"></span>
+                <span class="toggle-menu-bar"></span>
+                <span class="toggle-menu-bar"></span>
+              </li>
+              <li class="content" style="display: none;">
+                <ul>
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!--*********************************** End of hamburguer button **********************************-->
     </body>
 
 </html>
