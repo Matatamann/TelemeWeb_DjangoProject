@@ -18,7 +18,15 @@ from django.contrib import admin
 from home import views
 
 urlpatterns = [
+    url(r'^developer/', 'home.views.developer'),
+    url(r'^fuel/', 'home.views.fuel'),
+    url(r'^gps/', 'home.views.gps'),
     url(r'^$', 'home.views.index'),
+    url(r'^positions/', 'home.views.positions'),
+    url(r'^rpm/', 'home.views.rpm'),
+    url(r'^temperature/', 'home.views.temperature'),
+    url(r'^trail/', 'home.views.trail'),
+    url(r'^velocity/', 'home.views.velocity'),
     url(r'^charts/', include('charts.urls')),
     url(r'^admin/', admin.site.urls),
 ]
