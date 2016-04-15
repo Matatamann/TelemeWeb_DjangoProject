@@ -1,0 +1,21 @@
+/*
+Relevant CSS classes include:
+
+Labels on the X & Y axes:
+.dygraph-axis-label
+.dygraph-axis-label-x
+.dygraph-axis-label-y
+.dygraph-axis-label-y2
+
+Chart labels, see http://dygraphs.com/tests/styled-chart-labels.html
+.dygraph-title
+.dygraph-xlabel
+.dygraph-ylabel
+.dygraph-y2label
+
+The legend, see http://dygraphs.com/tests/series-highlight.html
+.dygraph-legend
+*/
+.dygraph-title {
+    color: gray;
+}

@@ -1,10 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="home/static/home/css/graphic_1.css"/>
     <title>My Home Page</title>
     {% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'home/css/hamburger.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/graphic_1.css' %}" />
 </head>
 <body>
 
@@ -45,7 +47,8 @@
 
 <div class="content top-span">
 <!--Here it goes all the magic...-->
-    <h1>INDEX</h1>
+    <!-- You may set style: "width: ...; height: ..." to size the chart -->
+    <div id="graph"></div>
 </div>
 
 <footer>
@@ -62,7 +65,9 @@
     </div>
 
     <script type="text/javascript" src="{% static 'js/jquery-1.12.3.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dygraphs_1.1.1.js' %}"></script>
     <script type="text/javascript" src="{% static 'home/js/hamburger.js' %}"></script>
+    <script type="text/javascript" src="{% static 'home/js/graphic_1.js' %}"></script>
 </footer>
 
 </body>
